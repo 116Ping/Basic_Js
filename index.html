@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic_JS</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(31, 31, 128);
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>
+        Average of two Numbers in JavaScript
+    </h1>
+
+    <br>
+
+    <h5>
+        Enter X:
+    </h5>
+
+    <input type="text" id="x">
+
+    <h5>
+        Enter Y:
+    </h5>
+
+    <input type="text" id="y">
+
+    <br> <br>
+
+    <button onclick="myFunction()">
+        Submit
+    </button>
+
+    <h3 id="message1">
+    </h3>
+
+
+    <script>
+        function myFunction(){
+            var x = parseFloat(document.getElementById("x").value);
+
+            var y = parseFloat(document.getElementById("y").value);
+
+            var average = (x+y) / 2;
+
+
+
+            document.getElementById("message1").innerHTML = "Average: " + average.toFixed(2);
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
